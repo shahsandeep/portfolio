@@ -257,25 +257,25 @@ const getDownloadCount = () => {
     });
 };
 
-const addResponse = (e) => {
-  e.preventDefault();
-  console.log(initialFormData);
-  const options = {
-    method: "POST",
-    body: JSON.stringify({ ...initialFormData }),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  };
-  fetch(
-    "https://web-production-53d4.up.railway.app/portfolio/addResponse",
-    options
-  )
-    .then((res) => res.json())
-    .then((json) => {
-      alert(json.message);
-    });
-};
+// const addResponse = (e) => {
+//   e.preventDefault();
+//   console.log(initialFormData);
+//   const options = {
+//     method: "POST",
+//     body: JSON.stringify({ ...initialFormData }),
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//   };
+//   fetch(
+//     "https://web-production-53d4.up.railway.app/portfolio/addResponse",
+//     options
+//   )
+//     .then((res) => res.json())
+//     .then((json) => {
+//       alert(json.message);
+//     });
+// };
 
 var initialFormData = {
   name: "",
